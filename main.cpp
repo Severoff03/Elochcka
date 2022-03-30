@@ -9,7 +9,6 @@ void elochcka(int height)
 
     while (height != 0)
     {
-
         char space = ' ';
         for (int i = height; i > 0; i--)
         {
@@ -19,7 +18,6 @@ void elochcka(int height)
         for (int j = 0; j<num; j++)
         {
             cout << '*';
-
         }
         num+=2;
         cout << endl;
@@ -28,7 +26,8 @@ void elochcka(int height)
 
 int main()
 {
-    int height = 4;
+    int height;
+    cin >> height;
     elochcka(height);
     return 0;
 }
